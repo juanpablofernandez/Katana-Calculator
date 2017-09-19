@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B208CE6D7B98BC14F2B92927D9AD65 /* AsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53C7F758F869BE4B6F4EA68C6D78B5 /* AsyncAction.swift */; };
+		093096B64D2F4F61ED1CD0ED792BE119 /* NativeTouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F666F5C41683BA8314FFEED28CBAF /* NativeTouchHandler.swift */; };
+		0D0A1B930D945839924DD53D1B83817C /* Katana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D1032AD3A8E7426F07F34B24A5FE4D /* Katana.framework */; };
+		0E2E2B485C824353518C10A8A4CCE9A9 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41BAF30B6073FEAC19AD5B6C9E37677 /* Typealiases.swift */; };
+		0E4437C1084D810FE2AECFEFFAC87614 /* Pods-Katana Calculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE563AE911E6B2D9C50B553ED0F4273E /* Pods-Katana Calculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		128C5D7442080D19659C27207A6018E6 /* ViewsContainer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0433FAA2B021478F881409C11AB99F1 /* ViewsContainer+Helpers.swift */; };
+		13206299012C0227508F7700C1224EF6 /* UIView+PlatformNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E461AABF65189F5D64BB089A0397E /* UIView+PlatformNativeView.swift */; };
+		1A5416E57C99BEC26E8CF38CD2E3D722 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE09678DBD7E6A19CEEFADCF6AF0392 /* Table.swift */; };
+		1B1BC2E4C4B7B3079F1894BE182CA06A /* PlatformNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4F0DFDE817D42F4CC009F3F5C0791 /* PlatformNativeView.swift */; };
+		1CBFC40CFB1326C24406B15B59573D78 /* AnyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE84989C74D53BDBE46C24C5143C25 /* AnyNode.swift */; };
+		1F7996D8EC90E4DCA11FC819EE974C49 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4309D379C539CA51F74A12411F3513 /* Buildable.swift */; };
+		2301DF2B82812542CB771E21CFADB45E /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C1CCC1352F185A6A60C4A27B873BE /* AnimationType.swift */; };
+		23A2998AE33426CA9C167564E18C12CB /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BF6547A2128C2D3B1FC3C3E985A73 /* Commons.swift */; };
+		24705788EFA715F4AF64F775EA2C25D9 /* ConnectedNodeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07D3A5100D0A11BEC10B23EB201F283 /* ConnectedNodeDescription.swift */; };
+		28D1B967A4516DEB726FD13FDA5BDBD9 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D44A0E3CE81046F8D6C3A95F7B1659 /* EdgeInsets.swift */; };
+		2BEC4495991D19D03429E6C3C113F2CD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D680EDC1675CBE2D710692843CFC /* Image.swift */; };
+		30FDD7171E62C2343D3AD930060821ED /* AnimationPropsTransfomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C645269F7A728FBEA9281CFBB3447A1 /* AnimationPropsTransfomer.swift */; };
+		3CB8A38DC08EDE4DDBF186AA1744D138 /* ChildrenAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72E62A55F154DEA7EA431235320A3C /* ChildrenAnimations.swift */; };
+		3F3343B4AD01EED31570D83ED8D46080 /* Int+Katana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644868E8242FA259AC80B242F3EEA5E /* Int+Katana.swift */; };
+		45ECBDD21F41DBD4BA4E839DD99C3CDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FB82E1093D8D563A4C7A9294A25C3A /* Foundation.framework */; };
+		474FE8D7FFEA6DEBA85D05ECC4254856 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26A6AC7A6EF435A6627940AB54C096 /* Button.swift */; };
+		485938098B96C4A20C533DFF91228A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FB82E1093D8D563A4C7A9294A25C3A /* Foundation.framework */; };
+		48C221A80689823265A6E714D5088B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FB82E1093D8D563A4C7A9294A25C3A /* Foundation.framework */; };
+		49D1B282385B11A62522BE5E9F86E167 /* LayoutsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE1A0F0A3FC8F0B3775A2044813D90 /* LayoutsCache.swift */; };
+		51F9CFE866C8EE35C34AE180CE78C251 /* NodeDescriptionWithChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9B3AA1ED6EA1EC1F8A3151FA83F83 /* NodeDescriptionWithChildren.swift */; };
+		527EF0BBB6219A578F9C1CA830A84F8C /* PlasticNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3AED7202C767AEEF00329FDAA90C3 /* PlasticNode.swift */; };
+		593F92D875FF1A60EAC3451DB6BC6CCF /* KatanaElements-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E069E72B6550F1379836361C7A020BC0 /* KatanaElements-dummy.m */; };
+		60BA07D82E23DD07D4AD04380C51D77C /* PlasticView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCD667EADA6C9A8AE7D2F64D995B04 /* PlasticView+Convenience.swift */; };
+		654FD201DBF77F25F70AE191B893F7B4 /* TouchHandlerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9A582A2902B72D760786631E6B5D3 /* TouchHandlerEvent.swift */; };
+		65FDCA2D819D0FD324C1C5A2C8976E5F /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83C8FA81CC127F1D9A95C0780D97BE /* Label.swift */; };
+		6A192AAC0F3133100FB3D6DFDCC7A824 /* ActionLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6830B6827D9FFC58D73774897E00E /* ActionLinks.swift */; };
+		6C2E447ACDBF7DB1A33F05E5EAECF9EB /* PlasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6FB36EA8D59E2DED9066570B4A7E8 /* PlasticView.swift */; };
+		6E34EDAB6E26AF72365FC01FCEFE233B /* InternalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F77C77C50606E56F7829A2D05F8ACA /* InternalNode.swift */; };
+		766FB9317275B0072B3EFBF4D065B325 /* Node+AnyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358EC6121B54D01C66FB1760653F1646 /* Node+AnyNode.swift */; };
+		77E2B110857CEBC0BCE0BB66A45B2E4B /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C086B8A0EAF1CA26D9F103A92F2A0 /* TableCell.swift */; };
+		7800BD2F509E3BD132BE377804557C90 /* PlasticReferenceSizeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAFE6841351BE25E7BCA6ACCC04B192 /* PlasticReferenceSizeable.swift */; };
+		781B062AA328E1481E5AB6D36936BAA4 /* TouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17030C54AD95C7D389CAC43679555C /* TouchHandler.swift */; };
+		803ED67ECB71C1AADA1ED04A03B20160 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506C9E670011EAA05E2A091CFBD9A1 /* Animation.swift */; };
+		828F8038B48915706E9569A0A81B6205 /* NodeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267F7D092DA67E54A3D12E8567E2FFB /* NodeDescription.swift */; };
+		84317245C96D7CB1AF0D36B9C3CD0F9A /* Highlightable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235B4C051B85318F86C4EE5FD7A5FBA /* Highlightable.swift */; };
+		847C8467DF77B933DE4AFFA9FAD1A89F /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49456D85B4CBE35052F657425818B0B1 /* Anchor.swift */; };
+		860BB6296E70A92D0CBDAE3D5D3C81F3 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66365178C4CB9CA9490C0350D3AD2E56 /* State.swift */; };
+		864F93C2FC164101CD476D338BE8077C /* PlasticNodeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD12FDA46C0B9E76E96491946496E2 /* PlasticNodeDescription.swift */; };
+		89051FF31B2A05284AAC9D874228FEEC /* SideEffectDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85333AB9E4AB77BF63FE0AA84C343564 /* SideEffectDependencyContainer.swift */; };
+		94B5121C8893044EBF2838AB6853C09E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3E6FF42AE1249F336EBA847F4BE14 /* Renderer.swift */; };
+		99035783C926D176D1218B0B96270B87 /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ECE942A203D8A95E3C515307B00875 /* AnimationUtils.swift */; };
+		9A3264E8F2642B50C85643E9D9F74EB3 /* LinkeableAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC99F93BEC5046F7F7ABA2F7E0595C /* LinkeableAction.swift */; };
+		9DD0406054FF2FB25DE15105DC46BE1A /* TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE60478EB6212DF9C9E8E38D31A99FD /* TableDelegate.swift */; };
+		A0D64948DD69B259D447AA8127817674 /* KatanaElements-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE7707743175E0BDAC83796CAB035C1 /* KatanaElements-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1D967A1BBEDD3DFDF8563EA07DD1B28 /* StateMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CBCB7B97A8E378BAFD5C927B14A12D /* StateMockProvider.swift */; };
+		A34FC5E0F6FC8556CEBA688702A209CE /* Collections+Katana.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB418A68D60F707E057284C8ACAB665A /* Collections+Katana.swift */; };
+		A6973203B807DD8043FE3F9B6916CAB6 /* ActionWithSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3971FB780BF9B61568C500E538DC9B46 /* ActionWithSideEffect.swift */; };
+		ACAD83ABFF0A5214CE6619B2E08D911D /* AnimationOptions+UIViewAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CDF2403ADBAA1FBE07936080EDCAB /* AnimationOptions+UIViewAnimationOptions.swift */; };
+		B0D665A685E41054212D9DF7AE88DBAA /* NativeTableWrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2502C39C2942A5BAB3ED4915EE82636 /* NativeTableWrapperCell.swift */; };
+		B6614369C1CA752AE2586A71BC13B5A3 /* ViewsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D8BB2DFC0D1D0970793EE01D511DC6 /* ViewsContainer.swift */; };
+		BD27708BAFA0856365E23E7C632ADAAE /* Katana-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 638B73F9318D23646F6FCB6714C12D44 /* Katana-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEE7D0A80FDE4EC27D71376DEC5D05E9 /* CoordinateConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF596463094D39ECC8D5C2DB81223A39 /* CoordinateConvertible.swift */; };
+		C401BF786ADBC7922D8B9BAB11B4E74D /* NativeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E05F67F1CACAFBD1BDC37D20F295AB /* NativeTable.swift */; };
+		C41938B46043E58B41B519FF1014AFAB /* ActionLinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C78306697651A9101389DF14C5C186 /* ActionLinker.swift */; };
+		C8BFA5013D8F48085B05DDCA86BA897C /* NativeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E2AF0BA8BB30ABA51B129040175AA /* NativeButton.swift */; };
+		CA5122FAD7E023B58B1AED0CF95DF8FA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC80AB15F9B56222D7A5F271C8825AC /* View.swift */; };
+		CC5AFD10417F7EBA21CB1C1E5711CAF5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E238674B037921C2A55AB1720057273 /* Store.swift */; };
+		CD3AF5D1B4224D0241B24EBC83ED036F /* StoreTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050ECCBAA526BB4E6D55B0029ED0E24 /* StoreTypealiases.swift */; };
+		CE2F5384899616BD87BCE5AFCF9030DB /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D007B156FD69A0592EF4EA1E1BBEA7D /* AnimationContainer.swift */; };
+		D83E06A51824112DE1C8D0EB40EBD355 /* Array+Plastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7DCDFB64403F262378CE161368183 /* Array+Plastic.swift */; };
+		DD35C578EBCAC585CA569738B50501B8 /* Katana.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F09007BCB315C885EE5EA1E6C7E7C5 /* Katana.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D92D7866FC62FCA1F4C8FB0146C841 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDF096700C4146104001E52ED15FCF /* Action.swift */; };
+		E31F019C35B8934A7E659EB71CBDD305 /* Pods-Katana Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C73ADA6D0719B72084CFA7CAD9B175 /* Pods-Katana Calculator-dummy.m */; };
+		E532318AB50A25D1F48C8FF18A7FFC1F /* Katana-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C76CE4CDEA0861E34B3CB0386A2F15 /* Katana-dummy.m */; };
+		E732E1664294ADCC7002468C4D874379 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D43FF7F7BF6B0F3AB5482D19CE6B5C /* Value.swift */; };
+		EF5A832250F10ACFE0B64CE9622C2CA9 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367928F81E25ACB37B044284BC1DF523 /* Size.swift */; };
+		EFC365711D918304B3D96CEB6560A544 /* Refs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62669D7A3DDEF0042B8819955D9A1279 /* Refs.swift */; };
+		F91BC9EF7C09C9C90376608F27ED90E2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DF43509CF96AEB58B9BA0FB0989BA /* Node.swift */; };
+		FC35481B51D17EB708C05D4220C1971C /* KatanaElements.h in Headers */ = {isa = PBXBuildFile; fileRef = 788FB4D7A53D66E635BFA79F12EE11C2 /* KatanaElements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DAED0E036B35625C0E41ABC4FC64AE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0EB457B069D547D32044CE5512F0DB3;
+			remoteInfo = Katana;
+		};
+		5987B348400066861CD148311C9D862B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6BE245E98BB7A97FD187176CB50110F;
+			remoteInfo = KatanaElements;
+		};
+		FF18C733F566F45B17385F79581AFDD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0EB457B069D547D32044CE5512F0DB3;
+			remoteInfo = Katana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051E2AF0BA8BB30ABA51B129040175AA /* NativeButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeButton.swift; path = KatanaElements/iOS/NativeButton.swift; sourceTree = "<group>"; };
+		06E05F67F1CACAFBD1BDC37D20F295AB /* NativeTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTable.swift; path = KatanaElements/iOS/Table/NativeTable.swift; sourceTree = "<group>"; };
+		10F4F0DFDE817D42F4CC009F3F5C0791 /* PlatformNativeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlatformNativeView.swift; path = Katana/Core/Node/PlatformNativeView.swift; sourceTree = "<group>"; };
+		13ECE942A203D8A95E3C515307B00875 /* AnimationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationUtils.swift; path = Katana/Core/Animations/AnimationUtils.swift; sourceTree = "<group>"; };
+		14B8537F8A003A01C04913C1E77B2F29 /* Pods-Katana Calculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Katana Calculator-resources.sh"; sourceTree = "<group>"; };
+		1644868E8242FA259AC80B242F3EEA5E /* Int+Katana.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Katana.swift"; path = "Katana/Extensions/Int+Katana.swift"; sourceTree = "<group>"; };
+		1A17030C54AD95C7D389CAC43679555C /* TouchHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchHandler.swift; path = KatanaElements/iOS/TouchHandler/TouchHandler.swift; sourceTree = "<group>"; };
+		1AC1D680EDC1675CBE2D710692843CFC /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = KatanaElements/iOS/Image.swift; sourceTree = "<group>"; };
+		1AE09678DBD7E6A19CEEFADCF6AF0392 /* Table.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Table.swift; path = KatanaElements/iOS/Table/Table.swift; sourceTree = "<group>"; };
+		1BAFE6841351BE25E7BCA6ACCC04B192 /* PlasticReferenceSizeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlasticReferenceSizeable.swift; path = Katana/Plastic/PlasticReferenceSizeable.swift; sourceTree = "<group>"; };
+		1D7BF6547A2128C2D3B1FC3C3E985A73 /* Commons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commons.swift; path = Katana/Core/NodeDescription/Commons.swift; sourceTree = "<group>"; };
+		1DCC99F93BEC5046F7F7ABA2F7E0595C /* LinkeableAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkeableAction.swift; path = Katana/Store/Middleware/ActionLinker/LinkeableAction.swift; sourceTree = "<group>"; };
+		21E1AD31B92B44C1414AEFFF5D6F7958 /* Katana.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Katana.modulemap; sourceTree = "<group>"; };
+		23BF04FCC6BAB053E640123140CA829A /* Pods-Katana Calculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Katana Calculator-frameworks.sh"; sourceTree = "<group>"; };
+		24D43FF7F7BF6B0F3AB5482D19CE6B5C /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Katana/Plastic/Value.swift; sourceTree = "<group>"; };
+		266AC913C6CAF18CAC973FD781F314AF /* Pods-Katana Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Katana Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		279E461AABF65189F5D64BB089A0397E /* UIView+PlatformNativeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PlatformNativeView.swift"; path = "Katana/iOS/UIView+PlatformNativeView.swift"; sourceTree = "<group>"; };
+		28FB82E1093D8D563A4C7A9294A25C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2FD3E6FF42AE1249F336EBA847F4BE14 /* Renderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Renderer.swift; path = Katana/Core/Renderer/Renderer.swift; sourceTree = "<group>"; };
+		3037551F72AC909DC60F942B5436DFFD /* Pods-Katana Calculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Katana Calculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		32CDF096700C4146104001E52ED15FCF /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Katana/Store/Action.swift; sourceTree = "<group>"; };
+		32DCD667EADA6C9A8AE7D2F64D995B04 /* PlasticView+Convenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PlasticView+Convenience.swift"; path = "Katana/Plastic/PlasticView+Convenience.swift"; sourceTree = "<group>"; };
+		358EC6121B54D01C66FB1760653F1646 /* Node+AnyNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Node+AnyNode.swift"; path = "Katana/Core/Node/Node+AnyNode.swift"; sourceTree = "<group>"; };
+		367928F81E25ACB37B044284BC1DF523 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Katana/Plastic/Size.swift; sourceTree = "<group>"; };
+		3971FB780BF9B61568C500E538DC9B46 /* ActionWithSideEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionWithSideEffect.swift; path = Katana/Store/ActionWithSideEffect.swift; sourceTree = "<group>"; };
+		3D007B156FD69A0592EF4EA1E1BBEA7D /* AnimationContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationContainer.swift; path = Katana/Core/Animations/AnimationContainer.swift; sourceTree = "<group>"; };
+		45D8BB2DFC0D1D0970793EE01D511DC6 /* ViewsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewsContainer.swift; path = Katana/Plastic/ViewsContainer.swift; sourceTree = "<group>"; };
+		49456D85B4CBE35052F657425818B0B1 /* Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchor.swift; path = Katana/Plastic/Anchor.swift; sourceTree = "<group>"; };
+		4E238674B037921C2A55AB1720057273 /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Katana/Store/Store.swift; sourceTree = "<group>"; };
+		54D137679596CDAF1FB25B98ADBF35A5 /* KatanaElements.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KatanaElements.xcconfig; sourceTree = "<group>"; };
+		55506C9E670011EAA05E2A091CFBD9A1 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Katana/Core/Animations/Animation.swift; sourceTree = "<group>"; };
+		56AD12FDA46C0B9E76E96491946496E2 /* PlasticNodeDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlasticNodeDescription.swift; path = Katana/Plastic/PlasticNodeDescription.swift; sourceTree = "<group>"; };
+		59DE6F0F1CF03374FC830773C58A0C8A /* KatanaElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KatanaElements.framework; path = KatanaElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8C086B8A0EAF1CA26D9F103A92F2A0 /* TableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableCell.swift; path = KatanaElements/iOS/Table/TableCell.swift; sourceTree = "<group>"; };
+		5C645269F7A728FBEA9281CFBB3447A1 /* AnimationPropsTransfomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationPropsTransfomer.swift; path = Katana/Core/Animations/AnimationPropsTransfomer.swift; sourceTree = "<group>"; };
+		62669D7A3DDEF0042B8819955D9A1279 /* Refs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refs.swift; path = Katana/Core/Refs/Refs.swift; sourceTree = "<group>"; };
+		638B73F9318D23646F6FCB6714C12D44 /* Katana-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Katana-umbrella.h"; sourceTree = "<group>"; };
+		64F77C77C50606E56F7829A2D05F8ACA /* InternalNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalNode.swift; path = Katana/Core/Node/InternalNode.swift; sourceTree = "<group>"; };
+		66365178C4CB9CA9490C0350D3AD2E56 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Katana/Store/State.swift; sourceTree = "<group>"; };
+		66CE84989C74D53BDBE46C24C5143C25 /* AnyNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyNode.swift; path = Katana/Core/Node/AnyNode.swift; sourceTree = "<group>"; };
+		66D44A0E3CE81046F8D6C3A95F7B1659 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Katana/Plastic/EdgeInsets.swift; sourceTree = "<group>"; };
+		6D66C3FCD5EB2F8D802CAC074C28C4D4 /* Katana.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Katana.xcconfig; sourceTree = "<group>"; };
+		76CEE7A6A90113FC71BDA16AAB603D23 /* Pods-Katana Calculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Katana Calculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		788FB4D7A53D66E635BFA79F12EE11C2 /* KatanaElements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KatanaElements.h; path = KatanaElements/iOS/KatanaElements.h; sourceTree = "<group>"; };
+		7AC80AB15F9B56222D7A5F271C8825AC /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = KatanaElements/iOS/View.swift; sourceTree = "<group>"; };
+		7EA9B3AA1ED6EA1EC1F8A3151FA83F83 /* NodeDescriptionWithChildren.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeDescriptionWithChildren.swift; path = Katana/Core/NodeDescription/NodeDescriptionWithChildren.swift; sourceTree = "<group>"; };
+		80C539F943001CF96F8261EE468B883F /* Pods-Katana Calculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Katana Calculator.modulemap"; sourceTree = "<group>"; };
+		80C76CE4CDEA0861E34B3CB0386A2F15 /* Katana-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Katana-dummy.m"; sourceTree = "<group>"; };
+		85333AB9E4AB77BF63FE0AA84C343564 /* SideEffectDependencyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideEffectDependencyContainer.swift; path = Katana/Store/SideEffectDependencyContainer.swift; sourceTree = "<group>"; };
+		87CBCB7B97A8E378BAFD5C927B14A12D /* StateMockProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateMockProvider.swift; path = Katana/Core/Renderer/StateMockProvider.swift; sourceTree = "<group>"; };
+		88C73ADA6D0719B72084CFA7CAD9B175 /* Pods-Katana Calculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Katana Calculator-dummy.m"; sourceTree = "<group>"; };
+		8AF9A582A2902B72D760786631E6B5D3 /* TouchHandlerEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchHandlerEvent.swift; path = KatanaElements/Common/TouchHandlerEvent.swift; sourceTree = "<group>"; };
+		90F09007BCB315C885EE5EA1E6C7E7C5 /* Katana.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Katana.h; path = Katana/iOS/Katana.h; sourceTree = "<group>"; };
+		917FD1507CBEF49B85C6B511DF2F4422 /* Katana-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Katana-prefix.pch"; sourceTree = "<group>"; };
+		9235B4C051B85318F86C4EE5FD7A5FBA /* Highlightable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlightable.swift; path = KatanaElements/Common/Highlightable.swift; sourceTree = "<group>"; };
+		92934B953BDE63EFB55F0C1CD5FF710D /* KatanaElements.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KatanaElements.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		942861B06A806C1EA4B51E751075D223 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BE7707743175E0BDAC83796CAB035C1 /* KatanaElements-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KatanaElements-umbrella.h"; sourceTree = "<group>"; };
+		9F53C7F758F869BE4B6F4EA68C6D78B5 /* AsyncAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncAction.swift; path = Katana/Store/AsyncAction.swift; sourceTree = "<group>"; };
+		AE26A6AC7A6EF435A6627940AB54C096 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = KatanaElements/iOS/Button.swift; sourceTree = "<group>"; };
+		B07D3A5100D0A11BEC10B23EB201F283 /* ConnectedNodeDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectedNodeDescription.swift; path = Katana/Core/StoreConnection/ConnectedNodeDescription.swift; sourceTree = "<group>"; };
+		B2502C39C2942A5BAB3ED4915EE82636 /* NativeTableWrapperCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTableWrapperCell.swift; path = KatanaElements/iOS/Table/NativeTableWrapperCell.swift; sourceTree = "<group>"; };
+		B59F666F5C41683BA8314FFEED28CBAF /* NativeTouchHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTouchHandler.swift; path = KatanaElements/iOS/TouchHandler/NativeTouchHandler.swift; sourceTree = "<group>"; };
+		BA4309D379C539CA51F74A12411F3513 /* Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buildable.swift; path = KatanaElements/Common/Buildable.swift; sourceTree = "<group>"; };
+		BA6C1CCC1352F185A6A60C4A27B873BE /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Katana/Core/Animations/AnimationType.swift; sourceTree = "<group>"; };
+		BC38222EFE407B31FF60FC52C18A0D86 /* Pods-Katana Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Katana Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		BD83C8FA81CC127F1D9A95C0780D97BE /* Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Label.swift; path = KatanaElements/iOS/Label.swift; sourceTree = "<group>"; };
+		C0BE8934CFC58377C58E4C80AA9684CD /* KatanaElements-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KatanaElements-prefix.pch"; sourceTree = "<group>"; };
+		C79CDF2403ADBAA1FBE07936080EDCAB /* AnimationOptions+UIViewAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AnimationOptions+UIViewAnimationOptions.swift"; path = "Katana/iOS/AnimationOptions+UIViewAnimationOptions.swift"; sourceTree = "<group>"; };
+		C80DF43509CF96AEB58B9BA0FB0989BA /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Katana/Core/Node/Node.swift; sourceTree = "<group>"; };
+		CAA3AED7202C767AEEF00329FDAA90C3 /* PlasticNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlasticNode.swift; path = Katana/Plastic/PlasticNode.swift; sourceTree = "<group>"; };
+		CD482F5E42BB4BB3F9D22A34EC29252E /* Pods_Katana_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Katana_Calculator.framework; path = "Pods-Katana Calculator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0433FAA2B021478F881409C11AB99F1 /* ViewsContainer+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewsContainer+Helpers.swift"; path = "Katana/Plastic/ViewsContainer+Helpers.swift"; sourceTree = "<group>"; };
+		D050ECCBAA526BB4E6D55B0029ED0E24 /* StoreTypealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreTypealiases.swift; path = Katana/Store/StoreTypealiases.swift; sourceTree = "<group>"; };
+		D267F7D092DA67E54A3D12E8567E2FFB /* NodeDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeDescription.swift; path = Katana/Core/NodeDescription/NodeDescription.swift; sourceTree = "<group>"; };
+		DA72E62A55F154DEA7EA431235320A3C /* ChildrenAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChildrenAnimations.swift; path = Katana/Core/Animations/ChildrenAnimations.swift; sourceTree = "<group>"; };
+		DB418A68D60F707E057284C8ACAB665A /* Collections+Katana.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collections+Katana.swift"; path = "Katana/Extensions/Collections+Katana.swift"; sourceTree = "<group>"; };
+		DCE7DCDFB64403F262378CE161368183 /* Array+Plastic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Plastic.swift"; path = "Katana/Plastic/Array+Plastic.swift"; sourceTree = "<group>"; };
+		DE563AE911E6B2D9C50B553ED0F4273E /* Pods-Katana Calculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Katana Calculator-umbrella.h"; sourceTree = "<group>"; };
+		E069E72B6550F1379836361C7A020BC0 /* KatanaElements-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KatanaElements-dummy.m"; sourceTree = "<group>"; };
+		E0C78306697651A9101389DF14C5C186 /* ActionLinker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionLinker.swift; path = Katana/Store/Middleware/ActionLinker/ActionLinker.swift; sourceTree = "<group>"; };
+		ECA63BF0C7692A1511A887A4964A1104 /* Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Katana.framework; path = Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA9828AB1B99539E7600E93CFA90FD4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF6FB36EA8D59E2DED9066570B4A7E8 /* PlasticView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlasticView.swift; path = Katana/Plastic/PlasticView.swift; sourceTree = "<group>"; };
+		EE6F3D6D7862D8048663213C9C2D0292 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF596463094D39ECC8D5C2DB81223A39 /* CoordinateConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordinateConvertible.swift; path = Katana/Plastic/CoordinateConvertible.swift; sourceTree = "<group>"; };
+		F41BAF30B6073FEAC19AD5B6C9E37677 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Katana/iOS/Typealiases.swift; sourceTree = "<group>"; };
+		F4AE1A0F0A3FC8F0B3775A2044813D90 /* LayoutsCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutsCache.swift; path = Katana/Plastic/LayoutsCache.swift; sourceTree = "<group>"; };
+		F6D1032AD3A8E7426F07F34B24A5FE4D /* Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F6830B6827D9FFC58D73774897E00E /* ActionLinks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionLinks.swift; path = Katana/Store/Middleware/ActionLinker/ActionLinks.swift; sourceTree = "<group>"; };
+		FDE60478EB6212DF9C9E8E38D31A99FD /* TableDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableDelegate.swift; path = KatanaElements/iOS/Table/TableDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21C0DF274A1967BFB23AB985DA512334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45ECBDD21F41DBD4BA4E839DD99C3CDE /* Foundation.framework in Frameworks */,
+				0D0A1B930D945839924DD53D1B83817C /* Katana.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB48FDAF08339BAC163C2DD156E8E994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485938098B96C4A20C533DFF91228A7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7AA0A05BE1345A3D6BE15E80296D0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C221A80689823265A6E714D5088B8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E7B02DD74E34024E542FFE0B600C63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA9828AB1B99539E7600E93CFA90FD4 /* Info.plist */,
+				92934B953BDE63EFB55F0C1CD5FF710D /* KatanaElements.modulemap */,
+				54D137679596CDAF1FB25B98ADBF35A5 /* KatanaElements.xcconfig */,
+				E069E72B6550F1379836361C7A020BC0 /* KatanaElements-dummy.m */,
+				C0BE8934CFC58377C58E4C80AA9684CD /* KatanaElements-prefix.pch */,
+				9BE7707743175E0BDAC83796CAB035C1 /* KatanaElements-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KatanaElements";
+			sourceTree = "<group>";
+		};
+		2D189C86D0F52DA50A2CA15C23BAB309 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE6F3D6D7862D8048663213C9C2D0292 /* Info.plist */,
+				21E1AD31B92B44C1414AEFFF5D6F7958 /* Katana.modulemap */,
+				6D66C3FCD5EB2F8D802CAC074C28C4D4 /* Katana.xcconfig */,
+				80C76CE4CDEA0861E34B3CB0386A2F15 /* Katana-dummy.m */,
+				917FD1507CBEF49B85C6B511DF2F4422 /* Katana-prefix.pch */,
+				638B73F9318D23646F6FCB6714C12D44 /* Katana-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Katana";
+			sourceTree = "<group>";
+		};
+		3A1739FD2A8DB0F7A416707BDC237D54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6D1032AD3A8E7426F07F34B24A5FE4D /* Katana.framework */,
+				515F69F7BF167D06ABFBF9D3213EA77B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		515F69F7BF167D06ABFBF9D3213EA77B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				28FB82E1093D8D563A4C7A9294A25C3A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		64EADCE5DA650D7924ED00E4A2FEAA49 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F07A29F6F432BA0011C5E910CEDC2BE5 /* Pods-Katana Calculator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7953BDD57F7DE5DB2594DA6D18887F1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA63BF0C7692A1511A887A4964A1104 /* Katana.framework */,
+				59DE6F0F1CF03374FC830773C58A0C8A /* KatanaElements.framework */,
+				CD482F5E42BB4BB3F9D22A34EC29252E /* Pods_Katana_Calculator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3A1739FD2A8DB0F7A416707BDC237D54 /* Frameworks */,
+				9ADF5BF875D45528E0A9644C06ED0916 /* Pods */,
+				7953BDD57F7DE5DB2594DA6D18887F1A /* Products */,
+				64EADCE5DA650D7924ED00E4A2FEAA49 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9ADF5BF875D45528E0A9644C06ED0916 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC64AFA1E7CE70F4A752674EC0F1297A /* Katana */,
+				E5A3E2180B945FEFD11DAD146165276D /* KatanaElements */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC64AFA1E7CE70F4A752674EC0F1297A /* Katana */ = {
+			isa = PBXGroup;
+			children = (
+				32CDF096700C4146104001E52ED15FCF /* Action.swift */,
+				E0C78306697651A9101389DF14C5C186 /* ActionLinker.swift */,
+				F8F6830B6827D9FFC58D73774897E00E /* ActionLinks.swift */,
+				3971FB780BF9B61568C500E538DC9B46 /* ActionWithSideEffect.swift */,
+				49456D85B4CBE35052F657425818B0B1 /* Anchor.swift */,
+				55506C9E670011EAA05E2A091CFBD9A1 /* Animation.swift */,
+				3D007B156FD69A0592EF4EA1E1BBEA7D /* AnimationContainer.swift */,
+				C79CDF2403ADBAA1FBE07936080EDCAB /* AnimationOptions+UIViewAnimationOptions.swift */,
+				5C645269F7A728FBEA9281CFBB3447A1 /* AnimationPropsTransfomer.swift */,
+				BA6C1CCC1352F185A6A60C4A27B873BE /* AnimationType.swift */,
+				13ECE942A203D8A95E3C515307B00875 /* AnimationUtils.swift */,
+				66CE84989C74D53BDBE46C24C5143C25 /* AnyNode.swift */,
+				DCE7DCDFB64403F262378CE161368183 /* Array+Plastic.swift */,
+				9F53C7F758F869BE4B6F4EA68C6D78B5 /* AsyncAction.swift */,
+				DA72E62A55F154DEA7EA431235320A3C /* ChildrenAnimations.swift */,
+				DB418A68D60F707E057284C8ACAB665A /* Collections+Katana.swift */,
+				1D7BF6547A2128C2D3B1FC3C3E985A73 /* Commons.swift */,
+				B07D3A5100D0A11BEC10B23EB201F283 /* ConnectedNodeDescription.swift */,
+				EF596463094D39ECC8D5C2DB81223A39 /* CoordinateConvertible.swift */,
+				66D44A0E3CE81046F8D6C3A95F7B1659 /* EdgeInsets.swift */,
+				1644868E8242FA259AC80B242F3EEA5E /* Int+Katana.swift */,
+				64F77C77C50606E56F7829A2D05F8ACA /* InternalNode.swift */,
+				90F09007BCB315C885EE5EA1E6C7E7C5 /* Katana.h */,
+				F4AE1A0F0A3FC8F0B3775A2044813D90 /* LayoutsCache.swift */,
+				1DCC99F93BEC5046F7F7ABA2F7E0595C /* LinkeableAction.swift */,
+				C80DF43509CF96AEB58B9BA0FB0989BA /* Node.swift */,
+				358EC6121B54D01C66FB1760653F1646 /* Node+AnyNode.swift */,
+				D267F7D092DA67E54A3D12E8567E2FFB /* NodeDescription.swift */,
+				7EA9B3AA1ED6EA1EC1F8A3151FA83F83 /* NodeDescriptionWithChildren.swift */,
+				CAA3AED7202C767AEEF00329FDAA90C3 /* PlasticNode.swift */,
+				56AD12FDA46C0B9E76E96491946496E2 /* PlasticNodeDescription.swift */,
+				1BAFE6841351BE25E7BCA6ACCC04B192 /* PlasticReferenceSizeable.swift */,
+				ECF6FB36EA8D59E2DED9066570B4A7E8 /* PlasticView.swift */,
+				32DCD667EADA6C9A8AE7D2F64D995B04 /* PlasticView+Convenience.swift */,
+				10F4F0DFDE817D42F4CC009F3F5C0791 /* PlatformNativeView.swift */,
+				62669D7A3DDEF0042B8819955D9A1279 /* Refs.swift */,
+				2FD3E6FF42AE1249F336EBA847F4BE14 /* Renderer.swift */,
+				85333AB9E4AB77BF63FE0AA84C343564 /* SideEffectDependencyContainer.swift */,
+				367928F81E25ACB37B044284BC1DF523 /* Size.swift */,
+				66365178C4CB9CA9490C0350D3AD2E56 /* State.swift */,
+				87CBCB7B97A8E378BAFD5C927B14A12D /* StateMockProvider.swift */,
+				4E238674B037921C2A55AB1720057273 /* Store.swift */,
+				D050ECCBAA526BB4E6D55B0029ED0E24 /* StoreTypealiases.swift */,
+				F41BAF30B6073FEAC19AD5B6C9E37677 /* Typealiases.swift */,
+				279E461AABF65189F5D64BB089A0397E /* UIView+PlatformNativeView.swift */,
+				24D43FF7F7BF6B0F3AB5482D19CE6B5C /* Value.swift */,
+				45D8BB2DFC0D1D0970793EE01D511DC6 /* ViewsContainer.swift */,
+				D0433FAA2B021478F881409C11AB99F1 /* ViewsContainer+Helpers.swift */,
+				2D189C86D0F52DA50A2CA15C23BAB309 /* Support Files */,
+			);
+			name = Katana;
+			path = Katana;
+			sourceTree = "<group>";
+		};
+		E5A3E2180B945FEFD11DAD146165276D /* KatanaElements */ = {
+			isa = PBXGroup;
+			children = (
+				BA4309D379C539CA51F74A12411F3513 /* Buildable.swift */,
+				AE26A6AC7A6EF435A6627940AB54C096 /* Button.swift */,
+				9235B4C051B85318F86C4EE5FD7A5FBA /* Highlightable.swift */,
+				1AC1D680EDC1675CBE2D710692843CFC /* Image.swift */,
+				788FB4D7A53D66E635BFA79F12EE11C2 /* KatanaElements.h */,
+				BD83C8FA81CC127F1D9A95C0780D97BE /* Label.swift */,
+				051E2AF0BA8BB30ABA51B129040175AA /* NativeButton.swift */,
+				06E05F67F1CACAFBD1BDC37D20F295AB /* NativeTable.swift */,
+				B2502C39C2942A5BAB3ED4915EE82636 /* NativeTableWrapperCell.swift */,
+				B59F666F5C41683BA8314FFEED28CBAF /* NativeTouchHandler.swift */,
+				1AE09678DBD7E6A19CEEFADCF6AF0392 /* Table.swift */,
+				5B8C086B8A0EAF1CA26D9F103A92F2A0 /* TableCell.swift */,
+				FDE60478EB6212DF9C9E8E38D31A99FD /* TableDelegate.swift */,
+				1A17030C54AD95C7D389CAC43679555C /* TouchHandler.swift */,
+				8AF9A582A2902B72D760786631E6B5D3 /* TouchHandlerEvent.swift */,
+				7AC80AB15F9B56222D7A5F271C8825AC /* View.swift */,
+				03E7B02DD74E34024E542FFE0B600C63 /* Support Files */,
+			);
+			name = KatanaElements;
+			path = KatanaElements;
+			sourceTree = "<group>";
+		};
+		F07A29F6F432BA0011C5E910CEDC2BE5 /* Pods-Katana Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				942861B06A806C1EA4B51E751075D223 /* Info.plist */,
+				80C539F943001CF96F8261EE468B883F /* Pods-Katana Calculator.modulemap */,
+				76CEE7A6A90113FC71BDA16AAB603D23 /* Pods-Katana Calculator-acknowledgements.markdown */,
+				3037551F72AC909DC60F942B5436DFFD /* Pods-Katana Calculator-acknowledgements.plist */,
+				88C73ADA6D0719B72084CFA7CAD9B175 /* Pods-Katana Calculator-dummy.m */,
+				23BF04FCC6BAB053E640123140CA829A /* Pods-Katana Calculator-frameworks.sh */,
+				14B8537F8A003A01C04913C1E77B2F29 /* Pods-Katana Calculator-resources.sh */,
+				DE563AE911E6B2D9C50B553ED0F4273E /* Pods-Katana Calculator-umbrella.h */,
+				266AC913C6CAF18CAC973FD781F314AF /* Pods-Katana Calculator.debug.xcconfig */,
+				BC38222EFE407B31FF60FC52C18A0D86 /* Pods-Katana Calculator.release.xcconfig */,
+			);
+			name = "Pods-Katana Calculator";
+			path = "Target Support Files/Pods-Katana Calculator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18D01D898A2DBB38DD470CB85A5AD930 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D64948DD69B259D447AA8127817674 /* KatanaElements-umbrella.h in Headers */,
+				FC35481B51D17EB708C05D4220C1971C /* KatanaElements.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BFA6B78B55E20CBCE41F2790F54688F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD27708BAFA0856365E23E7C632ADAAE /* Katana-umbrella.h in Headers */,
+				DD35C578EBCAC585CA569738B50501B8 /* Katana.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82685D7A5DDFCBFF0F1373B97BF772D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4437C1084D810FE2AECFEFFAC87614 /* Pods-Katana Calculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A0EB457B069D547D32044CE5512F0DB3 /* Katana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2671F398D51E8246610C397120DF2FC /* Build configuration list for PBXNativeTarget "Katana" */;
+			buildPhases = (
+				FBC2EB30E2B4E02D148F1BF19308E75E /* Sources */,
+				E7AA0A05BE1345A3D6BE15E80296D0DF /* Frameworks */,
+				5BFA6B78B55E20CBCE41F2790F54688F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Katana;
+			productName = Katana;
+			productReference = ECA63BF0C7692A1511A887A4964A1104 /* Katana.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6BE245E98BB7A97FD187176CB50110F /* KatanaElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD672827B1350D38B6295B48F06760E3 /* Build configuration list for PBXNativeTarget "KatanaElements" */;
+			buildPhases = (
+				65094C54B3203927DE0B5F5FA094CB72 /* Sources */,
+				21C0DF274A1967BFB23AB985DA512334 /* Frameworks */,
+				18D01D898A2DBB38DD470CB85A5AD930 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BA89A07C29E4122006BD561D5C7A50D /* PBXTargetDependency */,
+			);
+			name = KatanaElements;
+			productName = KatanaElements;
+			productReference = 59DE6F0F1CF03374FC830773C58A0C8A /* KatanaElements.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E31EB02E16DC677D4F6C14C0BA9D1BE5 /* Pods-Katana Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8EEEDD26D05051F1354029CBDF43B6A /* Build configuration list for PBXNativeTarget "Pods-Katana Calculator" */;
+			buildPhases = (
+				148657EEA834D3441403E4C91502DEF8 /* Sources */,
+				AB48FDAF08339BAC163C2DD156E8E994 /* Frameworks */,
+				82685D7A5DDFCBFF0F1373B97BF772D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B01AFE9FE0DAF1684A0008BDDC6B90 /* PBXTargetDependency */,
+				F02200265974FD33D1501498FDF2C0AC /* PBXTargetDependency */,
+			);
+			name = "Pods-Katana Calculator";
+			productName = "Pods-Katana Calculator";
+			productReference = CD482F5E42BB4BB3F9D22A34EC29252E /* Pods_Katana_Calculator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7953BDD57F7DE5DB2594DA6D18887F1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0EB457B069D547D32044CE5512F0DB3 /* Katana */,
+				A6BE245E98BB7A97FD187176CB50110F /* KatanaElements */,
+				E31EB02E16DC677D4F6C14C0BA9D1BE5 /* Pods-Katana Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148657EEA834D3441403E4C91502DEF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31F019C35B8934A7E659EB71CBDD305 /* Pods-Katana Calculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65094C54B3203927DE0B5F5FA094CB72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7996D8EC90E4DCA11FC819EE974C49 /* Buildable.swift in Sources */,
+				474FE8D7FFEA6DEBA85D05ECC4254856 /* Button.swift in Sources */,
+				84317245C96D7CB1AF0D36B9C3CD0F9A /* Highlightable.swift in Sources */,
+				2BEC4495991D19D03429E6C3C113F2CD /* Image.swift in Sources */,
+				593F92D875FF1A60EAC3451DB6BC6CCF /* KatanaElements-dummy.m in Sources */,
+				65FDCA2D819D0FD324C1C5A2C8976E5F /* Label.swift in Sources */,
+				C8BFA5013D8F48085B05DDCA86BA897C /* NativeButton.swift in Sources */,
+				C401BF786ADBC7922D8B9BAB11B4E74D /* NativeTable.swift in Sources */,
+				B0D665A685E41054212D9DF7AE88DBAA /* NativeTableWrapperCell.swift in Sources */,
+				093096B64D2F4F61ED1CD0ED792BE119 /* NativeTouchHandler.swift in Sources */,
+				1A5416E57C99BEC26E8CF38CD2E3D722 /* Table.swift in Sources */,
+				77E2B110857CEBC0BCE0BB66A45B2E4B /* TableCell.swift in Sources */,
+				9DD0406054FF2FB25DE15105DC46BE1A /* TableDelegate.swift in Sources */,
+				781B062AA328E1481E5AB6D36936BAA4 /* TouchHandler.swift in Sources */,
+				654FD201DBF77F25F70AE191B893F7B4 /* TouchHandlerEvent.swift in Sources */,
+				CA5122FAD7E023B58B1AED0CF95DF8FA /* View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC2EB30E2B4E02D148F1BF19308E75E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D92D7866FC62FCA1F4C8FB0146C841 /* Action.swift in Sources */,
+				C41938B46043E58B41B519FF1014AFAB /* ActionLinker.swift in Sources */,
+				6A192AAC0F3133100FB3D6DFDCC7A824 /* ActionLinks.swift in Sources */,
+				A6973203B807DD8043FE3F9B6916CAB6 /* ActionWithSideEffect.swift in Sources */,
+				847C8467DF77B933DE4AFFA9FAD1A89F /* Anchor.swift in Sources */,
+				803ED67ECB71C1AADA1ED04A03B20160 /* Animation.swift in Sources */,
+				CE2F5384899616BD87BCE5AFCF9030DB /* AnimationContainer.swift in Sources */,
+				ACAD83ABFF0A5214CE6619B2E08D911D /* AnimationOptions+UIViewAnimationOptions.swift in Sources */,
+				30FDD7171E62C2343D3AD930060821ED /* AnimationPropsTransfomer.swift in Sources */,
+				2301DF2B82812542CB771E21CFADB45E /* AnimationType.swift in Sources */,
+				99035783C926D176D1218B0B96270B87 /* AnimationUtils.swift in Sources */,
+				1CBFC40CFB1326C24406B15B59573D78 /* AnyNode.swift in Sources */,
+				D83E06A51824112DE1C8D0EB40EBD355 /* Array+Plastic.swift in Sources */,
+				00B208CE6D7B98BC14F2B92927D9AD65 /* AsyncAction.swift in Sources */,
+				3CB8A38DC08EDE4DDBF186AA1744D138 /* ChildrenAnimations.swift in Sources */,
+				A34FC5E0F6FC8556CEBA688702A209CE /* Collections+Katana.swift in Sources */,
+				23A2998AE33426CA9C167564E18C12CB /* Commons.swift in Sources */,
+				24705788EFA715F4AF64F775EA2C25D9 /* ConnectedNodeDescription.swift in Sources */,
+				BEE7D0A80FDE4EC27D71376DEC5D05E9 /* CoordinateConvertible.swift in Sources */,
+				28D1B967A4516DEB726FD13FDA5BDBD9 /* EdgeInsets.swift in Sources */,
+				3F3343B4AD01EED31570D83ED8D46080 /* Int+Katana.swift in Sources */,
+				6E34EDAB6E26AF72365FC01FCEFE233B /* InternalNode.swift in Sources */,
+				E532318AB50A25D1F48C8FF18A7FFC1F /* Katana-dummy.m in Sources */,
+				49D1B282385B11A62522BE5E9F86E167 /* LayoutsCache.swift in Sources */,
+				9A3264E8F2642B50C85643E9D9F74EB3 /* LinkeableAction.swift in Sources */,
+				766FB9317275B0072B3EFBF4D065B325 /* Node+AnyNode.swift in Sources */,
+				F91BC9EF7C09C9C90376608F27ED90E2 /* Node.swift in Sources */,
+				828F8038B48915706E9569A0A81B6205 /* NodeDescription.swift in Sources */,
+				51F9CFE866C8EE35C34AE180CE78C251 /* NodeDescriptionWithChildren.swift in Sources */,
+				527EF0BBB6219A578F9C1CA830A84F8C /* PlasticNode.swift in Sources */,
+				864F93C2FC164101CD476D338BE8077C /* PlasticNodeDescription.swift in Sources */,
+				7800BD2F509E3BD132BE377804557C90 /* PlasticReferenceSizeable.swift in Sources */,
+				60BA07D82E23DD07D4AD04380C51D77C /* PlasticView+Convenience.swift in Sources */,
+				6C2E447ACDBF7DB1A33F05E5EAECF9EB /* PlasticView.swift in Sources */,
+				1B1BC2E4C4B7B3079F1894BE182CA06A /* PlatformNativeView.swift in Sources */,
+				EFC365711D918304B3D96CEB6560A544 /* Refs.swift in Sources */,
+				94B5121C8893044EBF2838AB6853C09E /* Renderer.swift in Sources */,
+				89051FF31B2A05284AAC9D874228FEEC /* SideEffectDependencyContainer.swift in Sources */,
+				EF5A832250F10ACFE0B64CE9622C2CA9 /* Size.swift in Sources */,
+				860BB6296E70A92D0CBDAE3D5D3C81F3 /* State.swift in Sources */,
+				A1D967A1BBEDD3DFDF8563EA07DD1B28 /* StateMockProvider.swift in Sources */,
+				CC5AFD10417F7EBA21CB1C1E5711CAF5 /* Store.swift in Sources */,
+				CD3AF5D1B4224D0241B24EBC83ED036F /* StoreTypealiases.swift in Sources */,
+				0E2E2B485C824353518C10A8A4CCE9A9 /* Typealiases.swift in Sources */,
+				13206299012C0227508F7700C1224EF6 /* UIView+PlatformNativeView.swift in Sources */,
+				E732E1664294ADCC7002468C4D874379 /* Value.swift in Sources */,
+				128C5D7442080D19659C27207A6018E6 /* ViewsContainer+Helpers.swift in Sources */,
+				B6614369C1CA752AE2586A71BC13B5A3 /* ViewsContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B01AFE9FE0DAF1684A0008BDDC6B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Katana;
+			target = A0EB457B069D547D32044CE5512F0DB3 /* Katana */;
+			targetProxy = FF18C733F566F45B17385F79581AFDD7 /* PBXContainerItemProxy */;
+		};
+		5BA89A07C29E4122006BD561D5C7A50D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Katana;
+			target = A0EB457B069D547D32044CE5512F0DB3 /* Katana */;
+			targetProxy = 2DAED0E036B35625C0E41ABC4FC64AE9 /* PBXContainerItemProxy */;
+		};
+		F02200265974FD33D1501498FDF2C0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KatanaElements;
+			target = A6BE245E98BB7A97FD187176CB50110F /* KatanaElements */;
+			targetProxy = 5987B348400066861CD148311C9D862B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A0D1AB5800DD2703F1A15D0D13A20E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC38222EFE407B31FF60FC52C18A0D86 /* Pods-Katana Calculator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Katana Calculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Katana Calculator/Pods-Katana Calculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Katana_Calculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6020EC51AFF2FD01AD35A784E284F967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266AC913C6CAF18CAC973FD781F314AF /* Pods-Katana Calculator.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Katana Calculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Katana Calculator/Pods-Katana Calculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Katana_Calculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D24C36FE69D1A06C5480088D563D1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D137679596CDAF1FB25B98ADBF35A5 /* KatanaElements.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KatanaElements/KatanaElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KatanaElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KatanaElements/KatanaElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KatanaElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A802E083F54F8D5FF2196B2F4A1D98BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D137679596CDAF1FB25B98ADBF35A5 /* KatanaElements.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KatanaElements/KatanaElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KatanaElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KatanaElements/KatanaElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KatanaElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF21416DCA71DFC529F6F5DD73E49AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D66C3FCD5EB2F8D802CAC074C28C4D4 /* Katana.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Katana/Katana-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Katana/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Katana/Katana.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Katana;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE3F1AB69BD932136356B2064726C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D66C3FCD5EB2F8D802CAC074C28C4D4 /* Katana.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Katana/Katana-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Katana/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Katana/Katana.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Katana;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD672827B1350D38B6295B48F06760E3 /* Build configuration list for PBXNativeTarget "KatanaElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D24C36FE69D1A06C5480088D563D1FB /* Debug */,
+				A802E083F54F8D5FF2196B2F4A1D98BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2671F398D51E8246610C397120DF2FC /* Build configuration list for PBXNativeTarget "Katana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF21416DCA71DFC529F6F5DD73E49AEA /* Debug */,
+				DAE3F1AB69BD932136356B2064726C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8EEEDD26D05051F1354029CBDF43B6A /* Build configuration list for PBXNativeTarget "Pods-Katana Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6020EC51AFF2FD01AD35A784E284F967 /* Debug */,
+				5A0D1AB5800DD2703F1A15D0D13A20E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

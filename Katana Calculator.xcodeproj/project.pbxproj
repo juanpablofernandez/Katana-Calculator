@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3165687F6D88FF67879C3925 /* Pods_Katana_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ECCBD29C768FF91854C3E0 /* Pods_Katana_Calculator.framework */; };
+		69D8BEE91F70C3B900DE7C97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D8BEE81F70C3B900DE7C97 /* AppDelegate.swift */; };
+		69D8BEF01F70C3B900DE7C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D8BEEF1F70C3B900DE7C97 /* Assets.xcassets */; };
+		69D8BEF31F70C3B900DE7C97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D8BEF11F70C3B900DE7C97 /* LaunchScreen.storyboard */; };
+		69EC8EBF1F719ACB0013FBEF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EC8EBE1F719ACB0013FBEF /* Calculator.swift */; };
+		69EC8EC11F719E4C0013FBEF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EC8EC01F719E4C0013FBEF /* Colors.swift */; };
+		69EC8EC31F71A0FC0013FBEF /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EC8EC21F71A0FC0013FBEF /* Elements.swift */; };
+		69EC8EC51F71C5E90013FBEF /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EC8EC41F71C5E90013FBEF /* Cell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34ECCBD29C768FF91854C3E0 /* Pods_Katana_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katana_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D8BEE51F70C3B900DE7C97 /* Katana Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Katana Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D8BEE81F70C3B900DE7C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69D8BEEF1F70C3B900DE7C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69D8BEF21F70C3B900DE7C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69D8BEF41F70C3B900DE7C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EC8EBE1F719ACB0013FBEF /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		69EC8EC01F719E4C0013FBEF /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		69EC8EC21F71A0FC0013FBEF /* Elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
+		69EC8EC41F71C5E90013FBEF /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		86CADD09BA5B4A9B217322F0 /* Pods-Katana Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Katana Calculator/Pods-Katana Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		E2A34373E282E2FC549F58BA /* Pods-Katana Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Katana Calculator/Pods-Katana Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D8BEE21F70C3B900DE7C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3165687F6D88FF67879C3925 /* Pods_Katana_Calculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10AA744F6D83390AA54906A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34ECCBD29C768FF91854C3E0 /* Pods_Katana_Calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4749F7DF300E81AF278E2F90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2A34373E282E2FC549F58BA /* Pods-Katana Calculator.debug.xcconfig */,
+				86CADD09BA5B4A9B217322F0 /* Pods-Katana Calculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69D8BEDC1F70C3B900DE7C97 = {
+			isa = PBXGroup;
+			children = (
+				69D8BEE71F70C3B900DE7C97 /* Katana Calculator */,
+				69D8BEE61F70C3B900DE7C97 /* Products */,
+				4749F7DF300E81AF278E2F90 /* Pods */,
+				10AA744F6D83390AA54906A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69D8BEE61F70C3B900DE7C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D8BEE51F70C3B900DE7C97 /* Katana Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D8BEE71F70C3B900DE7C97 /* Katana Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				69EC8EB91F7199ED0013FBEF /* Actions */,
+				69EC8EBA1F7199ED0013FBEF /* State */,
+				69EC8EBD1F7199ED0013FBEF /* Utils */,
+				69EC8EBB1F7199ED0013FBEF /* UI */,
+				69D8BEE81F70C3B900DE7C97 /* AppDelegate.swift */,
+				69D8BEEF1F70C3B900DE7C97 /* Assets.xcassets */,
+				69D8BEF11F70C3B900DE7C97 /* LaunchScreen.storyboard */,
+				69D8BEF41F70C3B900DE7C97 /* Info.plist */,
+			);
+			path = "Katana Calculator";
+			sourceTree = "<group>";
+		};
+		69EC8EB91F7199ED0013FBEF /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		69EC8EBA1F7199ED0013FBEF /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		69EC8EBB1F7199ED0013FBEF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				69EC8EBC1F7199ED0013FBEF /* Calculator */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		69EC8EBC1F7199ED0013FBEF /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				69EC8EC21F71A0FC0013FBEF /* Elements.swift */,
+				69EC8EC01F719E4C0013FBEF /* Colors.swift */,
+				69EC8EBE1F719ACB0013FBEF /* Calculator.swift */,
+				69EC8EC41F71C5E90013FBEF /* Cell.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		69EC8EBD1F7199ED0013FBEF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D8BEE41F70C3B900DE7C97 /* Katana Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D8BEF71F70C3B900DE7C97 /* Build configuration list for PBXNativeTarget "Katana Calculator" */;
+			buildPhases = (
+				6E421FE301B9DB6F87B60D8C /* [CP] Check Pods Manifest.lock */,
+				69D8BEE11F70C3B900DE7C97 /* Sources */,
+				69D8BEE21F70C3B900DE7C97 /* Frameworks */,
+				69D8BEE31F70C3B900DE7C97 /* Resources */,
+				69C36215EA6B5426E7916241 /* [CP] Embed Pods Frameworks */,
+				5EBF0D2FAAE170ADA33D21E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Katana Calculator";
+			productName = "Katana Calculator";
+			productReference = 69D8BEE51F70C3B900DE7C97 /* Katana Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D8BEDD1F70C3B900DE7C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Juan Pablo Fernandez";
+				TargetAttributes = {
+					69D8BEE41F70C3B900DE7C97 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V92SZ8966T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 69D8BEE01F70C3B900DE7C97 /* Build configuration list for PBXProject "Katana Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D8BEDC1F70C3B900DE7C97;
+			productRefGroup = 69D8BEE61F70C3B900DE7C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D8BEE41F70C3B900DE7C97 /* Katana Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D8BEE31F70C3B900DE7C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D8BEF31F70C3B900DE7C97 /* LaunchScreen.storyboard in Resources */,
+				69D8BEF01F70C3B900DE7C97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EBF0D2FAAE170ADA33D21E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Katana Calculator/Pods-Katana Calculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C36215EA6B5426E7916241 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Katana Calculator/Pods-Katana Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E421FE301B9DB6F87B60D8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D8BEE11F70C3B900DE7C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D8BEE91F70C3B900DE7C97 /* AppDelegate.swift in Sources */,
+				69EC8EC11F719E4C0013FBEF /* Colors.swift in Sources */,
+				69EC8EC51F71C5E90013FBEF /* Cell.swift in Sources */,
+				69EC8EC31F71A0FC0013FBEF /* Elements.swift in Sources */,
+				69EC8EBF1F719ACB0013FBEF /* Calculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69D8BEF11F70C3B900DE7C97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D8BEF21F70C3B900DE7C97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69D8BEF51F70C3B900DE7C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69D8BEF61F70C3B900DE7C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D8BEF81F70C3B900DE7C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A34373E282E2FC549F58BA /* Pods-Katana Calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V92SZ8966T;
+				INFOPLIST_FILE = "Katana Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juanpablofernandez.Katana-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		69D8BEF91F70C3B900DE7C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CADD09BA5B4A9B217322F0 /* Pods-Katana Calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V92SZ8966T;
+				INFOPLIST_FILE = "Katana Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juanpablofernandez.Katana-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D8BEE01F70C3B900DE7C97 /* Build configuration list for PBXProject "Katana Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D8BEF51F70C3B900DE7C97 /* Debug */,
+				69D8BEF61F70C3B900DE7C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D8BEF71F70C3B900DE7C97 /* Build configuration list for PBXNativeTarget "Katana Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D8BEF81F70C3B900DE7C97 /* Debug */,
+				69D8BEF91F70C3B900DE7C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D8BEDD1F70C3B900DE7C97 /* Project object */;
+}
