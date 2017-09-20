@@ -37,9 +37,9 @@ struct CalculatorUtils {
             return .add
         case "-":
             return .subtract
-        case "*":
+        case "x":
             return .multiply
-        case "/":
+        case "÷":
             return .divide
         default:
             fatalError("Invalid state")

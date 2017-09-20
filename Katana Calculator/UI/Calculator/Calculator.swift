@@ -69,7 +69,7 @@ struct Calculator: NodeDescription, PlasticReferenceSizeable, PlasticNodeDescrip
                                         Keys.cell1, Keys.cell2, Keys.cell3, Keys.cell4]
         
         let cellTitles = ["C", "+/-", "%", "÷",
-                          "7", "8", "9", "X",
+                          "7", "8", "9", "x",
                           "4", "5", "6", "-",
                           "1", "2", "3", "+",
                           "0", "", ".", "="]
