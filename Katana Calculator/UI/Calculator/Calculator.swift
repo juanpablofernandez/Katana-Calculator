@@ -10,20 +10,37 @@ import Foundation
 import Katana
 import KatanaElements
 
-enum Operation {
-    case add, subtract, divide, multiply
+enum CalculatorSelection {
+    case Operation
+    case equal
+    case digit
 }
 
-struct Calculator: NodeDescription, PlasticReferenceSizeable, PlasticNodeDescription {
+enum Operation: String {
+    case add = "+"
+    case subtract = "-"
+    case divide = "/"
+    case multiply = "x"
+}
+
+struct Calculator: NodeDescription, PlasticReferenceSizeable, PlasticNodeDescription, ConnectedNodeDescription {
+
     typealias PropsType = Props
     typealias StateType = EmptyState
     typealias NativeView = UIView
     typealias Keys = ChildrenKeys
+    typealias StoreState = ApplicationState
     
     static var referenceSize = CGSize(width: 320, height: 568)
     var props: PropsType
     
     static func childrenDescriptions(props: PropsType, state: StateType, update: @escaping (StateType) -> (), dispatch: @escaping StoreDispatch) -> [AnyNodeDescription] {
+        
+        let cellCallback = { (title: String, type: CellType) in
+            return {
+                dispatch(DidTapCell(cellTitle: title, cellType: type))
+            }
+        }
         
         var children: [AnyNodeDescription] = [
             View(props: View.Props.build {
@@ -31,7 +48,7 @@ struct Calculator: NodeDescription, PlasticReferenceSizeable, PlasticNodeDescrip
                 $0.setKey(Keys.background)
             }),
             
-            Label(props: .resultsLabelProps(content: "0", key: Keys.result))
+            Label(props: .resultsLabelProps(content: props.result, key: Keys.result))
             
 //            Button(props: .cellButtonProps(title: "0", key: Keys.cell1, backgroundColor: .digitsBlue(), fontColor: .fontGray(), didTap: nil)),
 //            Button(props: .cellButtonProps(title: "0", key: Keys.cell2, backgroundColor: .digitsBlue(), fontColor: .fontGray(), didTap: nil)),
@@ -57,21 +74,15 @@ struct Calculator: NodeDescription, PlasticReferenceSizeable, PlasticNodeDescrip
                           "1", "2", "3", "+",
                           "0", "", ".", "="]
         
-        let cellBackgroundColors: [UIColor] = [.extrasBlue(), .extrasBlue(), .extrasBlue(), .operationsBlue(),
-                                               .digitsBlue(), .digitsBlue(), .digitsBlue(), .operationsBlue(),
-                                               .digitsBlue(), .digitsBlue(), .digitsBlue(), .operationsBlue(),
-                                               .digitsBlue(), .digitsBlue(), .digitsBlue(), .operationsBlue(),
-                                               .digitsBlue(), .clear, .digitsBlue(), .operationsBlue()]
-        
-        let cellFontColors: [UIColor] = [.fontGray(), .fontGray(), .fontGray(), .white,
-                                         .fontGray(), .fontGray(), .fontGray(), .white,
-                                         .fontGray(), .fontGray(), .fontGray(), .white,
-                                         .fontGray(), .fontGray(), .fontGray(), .white,
-                                         .fontGray(), .clear, .fontGray(), .white]
+        let cellTypes: [CellType] = [.extra, .extra, .extra, .operation,
+                                     .digit, .digit, .digit, .operation,
+                                     .digit, .digit, .digit, .operation,
+                                     .digit, .digit, .digit, .operation,
+                                     .digit, .digit, .digit, .equal]
         
         for i in 0..<cellTitles.count {
             
-            let cell = Button(props: .cellButtonProps(title: cellTitles[i], key: cellKeys[i], backgroundColor: cellBackgroundColors[i], fontColor: cellFontColors[i], didTap: nil))
+            let cell = CalculatorCell(props: CalculatorCell.Props(key: cellKeys[i], title: cellTitles[i], type: cellTypes[i], didTap: cellCallback(cellTitles[i], cellTypes[i])))
             
             children.append(cell)
         }
@@ -140,6 +151,17 @@ struct Calculator: NodeDescription, PlasticReferenceSizeable, PlasticNodeDescrip
         result.bottom = fifthRow[0].top
         result.height = fifthRow[0].height
     }
+    
+    static func connect(props: inout PropsType, to storeState: StoreState) {
+        props.result = storeState.result
+        props.operation = storeState.operation
+        props.selectedDigit = storeState.selectedDigit
+        props.firstNumber = storeState.firstNumber
+        props.secondNumber = storeState.secondNumber
+        props.isFirstNumber = storeState.isFirstNumber
+        props.hasOperation = storeState.hasOperation
+        props.canClear = storeState.canClear
+    }
 }
 
 extension Calculator {
@@ -156,9 +178,32 @@ extension Calculator {
 }
 
 extension Calculator {
+    
     struct Props: NodeDescriptionProps, Buildable {
         var frame: CGRect = .zero
         var key: String?
         var alpha: CGFloat = 1.0
+        
+        var result: String
+        var operation: Operation?
+        var selectedDigit: Double?
+        var firstNumber: String
+        var secondNumber: String
+        var isFirstNumber: Bool
+        var hasOperation: Bool
+        var canClear: Bool
+        
+        init() {
+            self.result = "0"
+            self.operation = nil
+            self.selectedDigit = nil
+            
+            self.firstNumber = "0"
+            self.secondNumber = "0"
+            
+            self.isFirstNumber = true
+            self.hasOperation = false
+            self.canClear = true
+        }
     }
 }

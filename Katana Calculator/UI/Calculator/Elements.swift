@@ -54,15 +54,9 @@ extension Button.Props {
                 ])
         ]
         
-        props.touchHandlers = [
-            .touchUpInside: { props.backgroundColor = .black }
-        ]
-        
-//        if let didTap = didTap {
-//            props.touchHandlers = [
-//                .touchUpInside: didTap
-//            ]
-//        }
+        if let didTap = didTap {
+            props.touchHandlers = [.touchUpInside: didTap]
+        }
         
         return props
     }

@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.frame = UIScreen.main.bounds
         })
         
-//        let store = Store<ApplicationState>()
-        self.renderer = Renderer(rootDescription: intro, store: nil)
+        let store = Store<ApplicationState>()
+        self.renderer = Renderer(rootDescription: intro, store: store)
         self.renderer?.render(in: view)
         
         return true
