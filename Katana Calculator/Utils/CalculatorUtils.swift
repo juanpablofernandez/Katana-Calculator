@@ -13,10 +13,6 @@ struct CalculatorUtils {
     private init() {}
     
     static func calculate(operation: Operation, firstNumber: Double, secondNumber: Double) -> Double {
-//        let firstNumber = Double(firstNumberText)!
-//        let secondNumber = Double(secondNumberText)!
-//        firstNumberText = ""
-//        secondNumberText = ""
         
         switch operation {
         case .add:

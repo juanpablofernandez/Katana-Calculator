@@ -38,8 +38,8 @@ extension Button.Props {
         
         props.setKey(key)
         props.backgroundColor = backgroundColor
-//        props.borderColor = backgroundColor != .clear ? .backgroundBlue() : .clear
-//        props.borderWidth = .scalable(2)
+        props.borderColor = backgroundColor != .clear ? .backgroundBlue() : .clear
+        props.borderWidth = .scalable(2)
 //        props.cornerRadius = .scalable(10)
         
         props.attributedTitles = [
@@ -53,28 +53,6 @@ extension Button.Props {
                 NSFontAttributeName: UIFont(name: "HelveticaNeue-Light", size: 25.0)!
                 ])
         ]
-        
-        if let didTap = didTap {
-            props.touchHandlers = [.touchUpInside: didTap]
-        }
-        
-        return props
-    }
-    
-    
-    /// Return the props for the button tha handles the board cell tap
-    ///
-    /// - parameter isWinningCell: true if the cell is part of the winning line
-    /// - parameter didTap:        a closure that is invoked when the button is invoked
-    /// - parameter key:           the key to associate with the element
-    static func gameCellButtonProps<K>(isWinningCell: Bool, didTap: (() -> ())?, key: K) -> Button.Props {
-        var props = Button.Props()
-        
-        props.backgroundColor = .white
-        
-        props.borderColor = .black
-        props.borderWidth = .scalable(1)
-        props.setKey(key)
         
         if let didTap = didTap {
             props.touchHandlers = [.touchUpInside: didTap]
